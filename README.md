@@ -1,7 +1,6 @@
 node-red-brew2
 ==============
 
-### About
+This is a dashboard built in node-red for a homebrewing application.
 
-This is your project's README.md file. It helps users understand what your
-project does, how to use it and anything else they may need to know.
+I am exploring node-red as a framework for temperature measurement and logging, volume sensing, and various process control algorithms.
