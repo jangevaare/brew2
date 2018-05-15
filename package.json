@@ -1,0 +1,12 @@
+{
+    "name": "node-red-brew2",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flows_brew2.json",
+            "credentialsFile": "flows_brew2_cred.json"
+        }
+    }
+}
