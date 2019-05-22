@@ -1,5 +1,4 @@
-<h1>brew2<h1>
-<hr>
+<h1>brew2</h1>
 <h3>Description</h3>
 
 This is a dashboard for brewery control, built using [Node-RED](https://github.com/node-red/node-red) running on a Raspberry Pi.
@@ -15,10 +14,8 @@ This dashboard is specific to [my brewery](https://onbrewing.com), which is a 2 
 </ul>
 
 <h3>Screenshots</h3>
-<center>
-<p><img src = "main.png" width=450><p>
-<p><img src = "mash_settings.png" width=450></p>
-</center>
+<img src = "main.png" width=600>
+<img src = "mash_settings.png" width=600>
 
 <h3>License</h3>
 <b>MIT License</b>
