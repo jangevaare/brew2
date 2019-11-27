@@ -7,9 +7,9 @@ This dashboard is specific to [my brewery](https://onbrewing.com), which is a 2 
 
 <h3>Features</h3>
 <ul>
-<li>PID temperature control of mash (using RIMS), with output limiting functionality</li>
+<li>Cascade PID temperature control of mash (using RIMS or HERMS), with output limiting functionality</li>
 <li>PID temperature control and manual control options of a boil kettle</li>
-<li>Output blocking to ensure only a single element is used at once</li>
+<li>Element interlock to ensure only a single element is used at once, and to ensure a RIMS only can be activated while pump is running</li>
 <li>Looks nice</li>
 </ul>
 
