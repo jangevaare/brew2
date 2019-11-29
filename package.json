@@ -1,0 +1,18 @@
+{
+    "name": "node-red-brew2",
+    "description": "A Node-Red App for Brewery Control",
+    "version": "0.0.3",
+    "dependencies": {
+        "node-red-contrib-sensor-ds18b20": "0.1.0",
+        "node-red-contrib-widgetlords": "1.1.0",
+        "node-red-dashboard": "2.15.2",
+        "node-red-node-smooth": "0.1.0",
+        "node-red-node-pi-gpio": "1.0.6"
+    },
+    "node-red": {
+        "settings": {
+            "flowFile": "flows_brew2.json",
+            "credentialsFile": "flows_brew2_cred.json"
+        }
+    }
+}
