@@ -10,10 +10,17 @@ This dashboard is specific to [my brewery](https://onbrewing.com), which is a 2 
 <li>Cascade PID temperature control of mash (using RIMS or HERMS), with output limiting functionality</li>
 <li>PID temperature control and manual control options of a boil kettle</li>
 <li>Element interlock to ensure only a single element is used at once, and to ensure a RIMS only can be activated while pump is running</li>
+<li>Option of logging of temperature, output, as well as PID calculations (useful for PID tuning and analysing PID behaviour) using [InfluxDB](https://github.com/influxdata/influxdb).</li>
 <li>Looks nice</li>
 </ul>
 
-<h3>Screenshots</h3>
+<h3>Important Notes</h3>
+<ul>
+<li>If you do not wish to use the Cascade PID functionality, set the outer loop coefficients all to 0. The algorithm will function then as a simple single PID using the inner loop coefficients. This is very useful for tuning the Cascade PID as well. I recommend that you run like this until you find a good tuning for the inner loop, you can then start to increase the outer loop coefficients.</li>
+<li>brew2 now uses [InfluxDB](https://github.com/influxdata/influxdb). This can be installed [following instructions here](https://docs.influxdata.com/influxdb/v1.7/introduction/installation). I recommend running both Node-RED and InfluxDB as services at startup. In my flows I refer to a database called `brew2`. You can create this by connecting to the InfluxDB command line interface (CLI), which can be done by typing simply `influx` after successful installation. Then, in the InfluxDB CLI type `CREATE DATABASE brew2`. You can then `exit`. You may return to this interface to work with your data in various ways - some of the more common operations *may* be implemented directly into brew2 in the future.</li>
+</ul>
+
+<h3>Screenshots (v0.3.1)</h3>
 <img src = "main.png" width=600>
 <img src = "mash_settings.png" width=600>
 
