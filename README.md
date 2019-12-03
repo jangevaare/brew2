@@ -14,10 +14,10 @@ This dashboard is specific to [my brewery](https://onbrewing.com), which is a 2 
 * Looks nice
 
 <h3>Important Notes</h3>
+
 If you do not wish to use the Cascade PID functionality, set the outer loop coefficients all to 0. The algorithm will function then as a simple single PID using the inner loop coefficients. This is very useful for tuning the Cascade PID as well. I recommend that you run like this until you find a good tuning for the inner loop, you can then start to increase the outer loop coefficients.
 
-
-brew2 now uses [InfluxDB](https://github.com/influxdata/influxdb). This can be installed [following instructions here](https://docs.influxdata.com/influxdb/v1.7/introduction/installation). I recommend running both Node-RED and InfluxDB as services at startup. In my flows I refer to a database called `brew2`. You can create this by connecting to the InfluxDB command line interface (CLI), which can be done by typing simply `influx` after successful installation. Then, in the InfluxDB CLI type `CREATE DATABASE brew2`. You can then `exit`. You may return to this interface to work with your data in various ways - some of the more common operations *may* be implemented directly into brew2 in the future.
+brew2 now uses <a href="https://github.com/influxdata/influxdb">InfluxDB</a>. This can be installed <a href="https://docs.influxdata.com/influxdb/v1.7/introduction/installation">following instructions here</a>. I recommend running both Node-RED and InfluxDB as services at startup. In my flows I refer to a database called `brew2`. You can create this by connecting to the InfluxDB command line interface (CLI), which can be done by typing simply `influx` after successful installation. Then, in the InfluxDB CLI type `CREATE DATABASE brew2`. You can then `exit`. You may return to this interface to work with your data in various ways - some of the more common operations *may* be implemented directly into brew2 in the future.
 
 <h3>Screenshots (v0.3.1)</h3>
 <img src = "main.png" width=600>
