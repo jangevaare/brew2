@@ -5,9 +5,8 @@
     "dependencies": {
         "node-red-contrib-sensor-ds18b20": "0.1.0",
         "node-red-dashboard": "2.20.0",
-        "node-red-node-smooth": "0.1.2",
         "node-red-node-pi-gpio": "1.0.6",
-        "node-red-contrib-influxdb": "0.4.0"
+        "node-red-node-smooth": "0.1.2"
     },
     "node-red": {
         "settings": {
